@@ -67,115 +67,126 @@
             <div id="fh5co-work">
                 <div class="row">
                     <div class="col-md-8">
-                        <a href="images/MediaWiki-2020-logo-horizontal.svg.png" class="image-popup img-portfolio-detail">
+                        <a href="images/MediaWiki-2020-logo-horizontal.svg.png"
+                            class="image-popup img-portfolio-detail">
                             <img src="images/MediaWiki-2020-logo-horizontal.svg.png" class="img-responsive">
                         </a>
                         <p>
                         <h4>Installation de PHP, SQL, et phpMyAdmin</h4>
-
-                        PHP : L'installation de PHP a nécessité la configuration des paramètres PHP.ini pour s'assurer
-                        que les extensions nécessaires (comme mbstring, intl, et xml) étaient activées.
-                        <br></br>
-                        SQL : MySQL a été installé pour gérer la base de données du wiki. La création de la base de
-                        données et d'un utilisateur dédié à MediaWiki a été effectuée via la ligne de commande MySQL.
-                        <br></br>
-                        phpMyAdmin : phpMyAdmin a été installé pour permettre une gestion simplifiée de la base de
-                        données via une interface web. Cela a impliqué la configuration de l'authentification et la
-                        sécurisation de l'accès.
+                        <b>PHP :</b> L'installation de PHP a nécessité la configuration minutieuse du fichier PHP.ini
+                        pour s'assurer que les extensions nécessaires telles que mbstring, intl, et xml étaient
+                        activées. Ces extensions sont cruciales pour le bon fonctionnement de MediaWiki et d'autres
+                        applications web.
+                        <br><br>
+                        <b>SQL :</b> MySQL a été choisi pour gérer la base de données du wiki. Après l'installation de
+                        MySQL, nous avons créé la base de données dédiée à MediaWiki ainsi qu'un utilisateur spécifique
+                        avec des privilèges appropriés via la ligne de commande MySQL. Cette étape a inclus des
+                        vérifications de sécurité pour garantir que la base de données était correctement protégée
+                        contre les accès non autorisés.
+                        <br><br>
+                        <b>phpMyAdmin :</b> L'installation de phpMyAdmin a simplifié la gestion de la base de données
+                        via une interface web conviviale. La configuration de phpMyAdmin a impliqué la mise en place de
+                        l'authentification, la sécurisation de l'accès et la personnalisation des paramètres pour
+                        répondre aux besoins spécifiques de notre environnement.
                         </p>
                         <a href="images/iis-logo.png" class="image-popup img-portfolio-detail">
                             <img src="images/iis-logo.png" class="img-responsive">
                         </a>
                         <p>
                         <h4>Hébergement de MediaWiki avec IIS</h4>
-
-                        IIS : Internet Information Services (IIS) a été configuré pour héberger MediaWiki. Cela
-                        comprenait la configuration des sites web, des pools d'applications, et des paramètres de
-                        sécurité.
-                        <br></br>
-                        Configuration de MediaWiki : Le logiciel MediaWiki a été téléchargé et installé dans le
-                        répertoire du site IIS. La configuration initiale a été réalisée via l'interface d'installation
-                        web de MediaWiki, connectant le wiki à la base de données MySQL.
+                        <b>IIS :</b> Internet Information Services (IIS) a été configuré pour héberger MediaWiki. Cette
+                        étape comprenait la configuration des sites web, des pools d'applications, et des paramètres de
+                        sécurité pour assurer une performance et une sécurité optimales.
+                        <br><br>
+                        <b>Configuration de MediaWiki :</b> Après avoir téléchargé et installé MediaWiki dans le
+                        répertoire du site IIS, nous avons effectué la configuration initiale via l'interface
+                        d'installation web de MediaWiki. Cela a inclus la connexion du wiki à la base de données MySQL
+                        et la configuration des paramètres de base du wiki.
                         </p>
                         <a href="images/Powershell.jpeg" class="image-popup img-portfolio-detail">
                             <img src="images/Powershell.jpeg" class="img-responsive">
                         </a>
                         <p>
                         <h4>Script de Sauvegarde Automatique de la Base de Données en PowerShell</h4>
-                        Un script PowerShell a été créé pour effectuer des sauvegardes automatiques de la base de
+                        Un script PowerShell a été développé pour effectuer des sauvegardes automatiques de la base de
                         données MySQL. Ce script se connecte à la base de données, exporte les données dans un fichier
-                        SQL, et stocke ce fichier dans un dossier de sauvegarde sécurisé. La tâche planifiée de Windows
-                        a été utilisée pour exécuter ce script à intervalles réguliers
+                        SQL, et stocke ce fichier dans un dossier de sauvegarde sécurisé. L'utilisation de la tâche
+                        planifiée de Windows permet d'exécuter ce script à des intervalles réguliers, assurant ainsi la
+                        sécurité et la disponibilité des données.
                         </p>
                         <p>
                         <h4>Fonction de Transfert des Scans des Imprimantes vers un Dossier Partagé</h4>
-                        Les imprimantes/scanners ont été configurés pour envoyer les scans vers un dossier partagé sur
-                        le serveur. Cette configuration a été réalisée en définissant l'adresse réseau du serveur et les
-                        credentials d'accès dans les paramètres des imprimantes.
-                        <br></br>
-                        Script d'automatisation : Un script PowerShell supplémentaire a été développé pour organiser les
-                        scans en fonction de la date et les déplacer dans des sous-dossiers spécifiques pour une
-                        meilleure gestion et accessibilité.
+                        Les imprimantes/scanners ont été configurés pour envoyer les scans directement vers un dossier
+                        partagé sur le serveur. Cette configuration a impliqué la définition de l'adresse réseau du
+                        serveur et l'intégration des credentials d'accès dans les paramètres des imprimantes.
+                        <br><br>
+                        <b>Script d'automatisation :</b> Un script PowerShell supplémentaire a été créé pour organiser
+                        les scans en fonction de la date, puis les déplacer dans des sous-dossiers spécifiques pour une
+                        gestion et une accessibilité optimisées. Cette automatisation a amélioré l'efficacité et la
+                        facilité d'accès aux documents scannés.
                         </p>
                     </div>
                     <div class="col-md-4 fh5co-project-detail">
                         <h2 class="fh5co-project-title">Service Postal</h2>
                         <span class="fh5co-project-sub">Stage</span>
                         <h3>Présentation générale</h3>
-                        <p>Durant mon stage en informatique, j'ai participé à l'installation et la configuration de
-                            MediaWiki sur un serveur, incluant l'installation de PHP, SQL, et phpMyAdmin, la création
-                            d'un script de sauvegarde automatique de la base de données en PowerShell, l'hébergement du
-                            wiki avec IIS, et la mise en place d'une fonction de transfert de scans des imprimantes vers
-                            un dossier partagé sur le serveur.
-                        </p>
+                        <p>Durant mon stage en informatique, j'ai eu l'opportunité de participer à diverses tâches
+                            techniques, notamment l'installation et la configuration de MediaWiki sur un serveur. Cela
+                            incluait l'installation de PHP, SQL, et phpMyAdmin, la création d'un script de sauvegarde
+                            automatique de la base de données en PowerShell, l'hébergement du wiki avec IIS, et la mise
+                            en place d'une fonction de transfert de scans des imprimantes vers un dossier partagé sur le
+                            serveur.</p>
                         <div class="fh5co-project-service">
                             <h3>Difficultés Rencontrées</h3>
-                            <p>
-                                Compatibilité des Versions : Assurer la compatibilité entre les versions de PHP, MySQL
-                                et MediaWiki a été un défi, nécessitant des recherches et des ajustements de
-                                configuration.
-                                <br></br>
-                                Sécurisation des Accès : La sécurisation des accès à phpMyAdmin et aux dossiers partagés
-                                a nécessité une attention particulière pour prévenir les accès non autorisés.
-                                <br></br>
-                                Automatisation des Sauvegardes : La création d'un script PowerShell fiable pour la
-                                sauvegarde automatique a impliqué de tester différents scénarios pour s'assurer que les
-                                sauvegardes étaient complètes et récupérables en cas de besoin.
-                            </p>
+                            <b>Compatibilité des Versions :</b> Assurer la compatibilité entre les versions de PHP,
+                            MySQL et MediaWiki a été un défi majeur. Cela a nécessité des recherches approfondies et des
+                            ajustements de configuration pour garantir un fonctionnement harmonieux de l'ensemble du
+                            système.
+                            <br><br>
+                            <b>Sécurisation des Accès :</b> La sécurisation des accès à phpMyAdmin et aux dossiers
+                            partagés a exigé une attention particulière pour prévenir les accès non autorisés. Des
+                            mesures de sécurité rigoureuses ont été mises en place pour protéger les données sensibles.
+                            <br><br>
+                            <b>Automatisation des Sauvegardes :</b> La création d'un script PowerShell fiable pour la
+                            sauvegarde automatique a impliqué de tester différents scénarios pour s'assurer que les
+                            sauvegardes étaient complètes et récupérables en cas de besoin. Ce processus a permis de
+                            garantir la sécurité et l'intégrité des données de la base de données.
                         </div>
+                        <br></br>
                         <div class="fh5co-project-service">
                             <h3>Conclusion</h3>
-                            <p>L'installation de MediaWiki sur un serveur a été une expérience formatrice, me permettant
-                                d'appliquer et d'élargir mes connaissances en administration de systèmes, en gestion de
-                                bases de données et en automatisation. Les défis rencontrés ont renforcé mes compétences
-                                en résolution de problèmes techniques complexes et en sécurisation des systèmes. Cette
-                                expérience a été précieuse pour mon développement professionnel dans le domaine de
-                                l'informatique, consolidant ma capacité à gérer des projets d'infrastructure réseau et
-                                serveur.</p>
+                            <p>L'installation de MediaWiki sur un serveur a été une expérience formatrice et
+                                enrichissante, me permettant d'appliquer et d'élargir mes connaissances en
+                                administration de systèmes, en gestion de bases de données et en automatisation. Les
+                                défis rencontrés ont renforcé mes compétences en résolution de problèmes techniques
+                                complexes et en sécurisation des systèmes. Cette expérience a été précieuse pour mon
+                                développement professionnel dans le domaine de l'informatique, consolidant ma capacité à
+                                gérer des projets d'infrastructure réseau et serveur.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container-wrap">
-            <footer id="fh2co-footer" role="contentinfo">
-                <div class="row copyright">
-                    <div class="col-md-12 text-center">
-                        <p>
-                            <small class="block">&copy; 2024 Guillaume Legrand.</small>
-                        </p>
-                        <p>
-                        <ul class="fh5co-social-icons">
-                            <li><a href="https://github.com/AIRF0X788"><i class="icon-github"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/guillaume-legrand78/"><i
-                                        class="icon-linkedin"></i></a></li>
-                        </ul>
-                        </p>
-                    </div>
+    <div class="container-wrap">
+        <footer id="fh2co-footer" role="contentinfo">
+            <div class="row copyright">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <small class="block">&copy; 2024 Guillaume Legrand.</small>
+                    </p>
+                    <p>
+                    <ul class="fh5co-social-icons">
+                        <li><a href="https://github.com/AIRF0X788"><i class="icon-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/guillaume-legrand78/"><i class="icon-linkedin"></i></a>
+                        </li>
+                    </ul>
+                    </p>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
+    </div>
     </div>
 
     <div class="gototop js-top">
